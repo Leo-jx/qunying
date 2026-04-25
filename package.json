@@ -1,0 +1,28 @@
+{
+  "name": "qunying-duan-shifei",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:server": "node server/index.js",
+    "dev:all": "concurrently -k \"npm:dev\" \"npm:dev:server\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:ai": "node server/testAi.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.22.1",
+    "openai": "^4.56.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "concurrently": "^9.0.1",
+    "vite": "^6.0.3"
+  }
+}

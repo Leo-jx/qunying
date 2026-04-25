@@ -1,0 +1,8 @@
+import{_ as p,c as r,j as f,b as t,f as m,v as _,t as i,h,g as n,o as u}from"./index-DAde6JuB.js";import{c as y}from"./aiService-DDPBSxpg.js";const x={class:"card"},g={class:"form-row"},k={class:"ai-row"},w=["disabled"],B={key:0,class:"draft"},D={__name:"MediationBench",setup(V){const e=n(""),o=n(""),l=n(!1),s=n(!1);async function c(){s.value=!0;try{const a=await y(`请将以下调解对话转换为文字记录：
+
+调解员：您好，今天我们来调解关于邻里噪音的纠纷。
+申请人：是的，邻居晚上经常制造噪音，影响我休息。
+被申请人：我不是故意的，只是偶尔聚会。
+调解员：我们需要找到一个双方都能接受的解决方案。`,{model:"xop3_qwencodernext",max_tokens:300});o.value=a,l.value=!0}catch(d){console.error("语音转文字失败:",d),o.value="【语音转写草稿】申请人：希望对方尽快解决噪音问题。被申请人：愿意配合。调解员：建议制定作息时间表。",l.value=!0}finally{s.value=!1}}function v(){e.value=o.value+`
+
+`+(e.value||"")}return(d,a)=>(u(),r("div",null,[a[3]||(a[3]=f('<h1 class="page-title" data-v-3ada75da>线上线下调解工作台</h1><div class="card" data-v-3ada75da><h2 class="h2" data-v-3ada75da>本场调解</h2><div class="toolbar" data-v-3ada75da><button type="button" class="btn btn-outline" data-v-3ada75da>发起线下签到</button><button type="button" class="btn btn-outline" data-v-3ada75da>发起视频调解</button></div></div>',2)),t("div",x,[a[2]||(a[2]=t("h2",{class:"h2"},"调解过程记录",-1)),t("div",g,[a[1]||(a[1]=t("label",{for:"log"},"笔录与协商要点（群英定稿）",-1)),m(t("textarea",{id:"log","onUpdate:modelValue":a[0]||(a[0]=b=>e.value=b),placeholder:"双方陈述、争议焦点、协商过程……"},null,512),[[_,e.value]])]),t("div",k,[t("button",{type:"button",class:"btn btn-primary",onClick:c,disabled:s.value},i(s.value?"处理中...":"语音转文字草稿"),9,w)]),l.value?(u(),r("div",B,[t("p",null,i(o.value),1),t("button",{type:"button",class:"btn btn-outline",onClick:v},"插入到编辑区（可再改）")])):h("",!0)])]))}},M=p(D,[["__scopeId","data-v-3ada75da"]]);export{M as default};
