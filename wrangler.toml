@@ -1,0 +1,8 @@
+name = "qunying-ai-proxy"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+AI_HTTP_BASE_URL = "https://maas-api.cn-huabei-1.xf-yun.com/v2"
+AI_MODEL_ID = "xop3qwencodernext"
+AI_TIMEOUT_MS = "30000"
